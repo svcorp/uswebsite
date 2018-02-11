@@ -4,16 +4,27 @@ import { FormsModule } from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 export const appRoutes: Routes = [
-  { path: '', component: AppComponent }
+  { path: 'home',
+    component: MainPageComponent
+  },
+
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
