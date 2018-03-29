@@ -1,0 +1,37 @@
+footer {
+  height: 360px;
+  background: black;
+}
+
+.line{
+width: 80%;
+height: 47px;
+border-bottom: 1px solid white;
+margin-right: auto;
+margin-left: auto;
+}
+
+.sv-logo {
+  display: block;
+  margin-top: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-branch{
+  margin-top: 40px;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.sv-korea{
+  margin-right: 50px;
+}
+
+.footer-copyright{
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}

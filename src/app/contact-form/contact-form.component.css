@@ -1,0 +1,70 @@
+.contact-us-form-box {
+  /*width: 100%;*/
+  z-index: 135;
+  position: relative;
+  background-color: white;
+}
+
+
+.contact-form-table {
+  margin-top: 50px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+
+.contact-form-intro {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-form-description {
+  font-size: 20px;
+  /*font-weight: bold;*/
+  margin-bottom: 20px;
+}
+
+.form-company-name{
+  width: 48.5%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-name{
+  width: 48.5%;
+  display: inline-block;
+}
+
+.form-email{
+  width: 48.5%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-phone{
+  width: 48.5%;
+  display: inline-block;
+}
+
+.form-product{
+  width: 48.5%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-quantity{
+  width: 48.5%;
+  display: inline-block;
+}
+
+#message{
+  height: 200px;
+}
+
+.form-button{
+  float: right;
+}

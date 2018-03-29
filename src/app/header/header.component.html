@@ -1,61 +1,61 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="nav navbar-nav">
-      <div class="dropdown show">
-        <a href="#dropdownMenuLink" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-          <img src="assets/images/menu-bar.png" class="nav-menu-bar"  height="4%" width="7%">
-        </a>
-        <ul class="dropdown-menu" id="dropdownMenuLink">
-         <li class="col-sm-3">
-           <ul>
-             <li class="dropdown-header">Sword of Truths</li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li class="divider"></li>
-           </ul>
-         </li>
-         <li class="col-sm-3">
-           <ul>
-             <li class="dropdown-header">by brand</li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li class="divider"></li>
-           </ul>
-         </li>
-         <li class="col-sm-3">
-           <ul>
-             <li class="dropdown-header">Sword of Truths</li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li class="divider"></li>
-           </ul>
-         </li>
-         <li class="col-sm-3">
-           <ul>
-             <li class="dropdown-header">by brand</li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-             <li><a href="#">Example</a></li>
-           </ul>
-         </li>
-        </ul>
-      </div>
+        <span class="nav-menu-bar" style="font-size:40px;cursor:pointer;color:white;" (click)="openNav()">&#9776; </span>
         <div class="svlogo navbar-brand">SV Digital</div>
     </div>
   </div>
 </nav>
+
+<div class="overlay" id="dropdownMenuLink">
+  <a href="#" class="closebtn">&times;</a>
+  <ul class="overlay-content" >
+   <li class="col-sm-3">
+     <ul>
+       <li class="dropdown-header">Sword of Truths</li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li class="divider"></li>
+     </ul>
+   </li>
+   <li class="col-sm-3">
+     <ul>
+       <li class="dropdown-header">by brand</li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li class="divider"></li>
+     </ul>
+   </li>
+   <li class="col-sm-3">
+     <ul>
+       <li class="dropdown-header">Sword of Truths</li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li class="divider"></li>
+     </ul>
+   </li>
+   <li class="col-sm-3">
+     <ul>
+       <li class="dropdown-header">by brand</li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+       <li><a href="#">Example</a></li>
+     </ul>
+   </li>
+  </ul>
+</div>

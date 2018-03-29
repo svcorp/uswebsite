@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "digital-sv",
+    "staging": "digital-sv-usa"
+  }
+}

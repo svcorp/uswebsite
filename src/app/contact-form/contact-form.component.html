@@ -1,0 +1,49 @@
+<div class="container-fluid contact-us-form-box">
+  <div class="row contact-form-table">
+      <div class="contact-form-intro text-center">
+      Speak with our Experts! </div>
+      <div class="contact-form-description text-center">
+      We would be happy to provide you with pricings or discuss about custom requirements you need in details.
+      Please provide the product model, quantity, and brief description of your needs and our experts will assist you with detailed information.
+      </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group form-company-name">
+        <label for="company">Company Name</label>
+        <input type="text" id="company" formControlName="company" class="form-control">
+        <span *ngIf="!contactForm.get('company').valid && contactForm.get('company').touched" class="help-block"> Please enter a valid company name! </span>
+      </div>
+      <div class="form-group form-name">
+        <label for="name">Name</label>
+        <input type="text" id="name" formControlName="name" class="form-control">
+      </div>
+      <div class="form-group form-email">
+        <label for="email">Email</label>
+        <input type="text" id="email" formControlName="email" class="form-control">
+        <span *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched" class="help-block"> Please enter a valid name! </span>
+      </div>
+      <div class="form-group form-phone">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" formControlName="phone" class="form-control">
+        <span *ngIf="!contactForm.get('phone').valid && contactForm.get('phone').touched" class="help-block"> Please enter a valid phone number! </span>
+      </div>
+      <div class="form-group form-product">
+        <label for="product">Product Interested</label>
+        <input type="text" id="product" formControlName="product" class="form-control">
+        <span *ngIf="!contactForm.get('product').valid && contactForm.get('product').touched" class="help-block"> Please enter a product name! </span>
+      </div>
+      <div class="form-group form-quantity">
+        <label for="quantity">Quantity</label>
+        <input type="text" id="quantity" formControlName="quantity" class="form-control">
+        <span *ngIf="!contactForm.get('quantity').valid && contactForm.get('quantity').touched" class="help-block"> Please enter a valid quantity! </span>
+      </div>
+      <div class="form-group form-message">
+        <label for="message">Your Message</label>
+        <input type="text" id="message" formControlName="message" class="form-control">
+        <span *ngIf="!contactForm.get('message').valid && contactForm.get('message').touched" class="help-block"> Please enter a valid message! </span>
+      </div>
+      <button type="submit" [disabled]="form.invalid" class="btn btn-primary form-button">Submit</button>
+    </form>
+  </div>
+
+</div>

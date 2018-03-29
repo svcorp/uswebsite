@@ -10,6 +10,15 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+  }
+  openNav() {
+  document.getElementById("dropdownMenuLink").style.height = "100%";
+
+  }
+
+  closeNav() {
+  document.getElementById("dropdownMenuLink").style.height = "0%";
   }
 
 }
