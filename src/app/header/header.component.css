@@ -10,7 +10,7 @@ nav{
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 111;
+  z-index: 121;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -19,47 +19,44 @@ nav{
   transition: 0.5s;
 }
 
+.col-sm-4{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .nav-menu-bar {
   right: 20px;
   display: block;
   position: absolute;
 }
 
-/*.nav-menu-bar:hover + #dropdownMenuLink {
-    height: 100%;
-    display: block;
-}
-
-.closebtn:hover ~ .overlay{
-    height:0%;
-}*/
-
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 8%;
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    /*text-align: center;*/
+}
+
+.overlay-content-item{
+  font-size: 1.7vw;
 }
 
 .overlay a {
-    padding: 8px;
+    padding: 6.5px;
     text-decoration: none;
-    font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.overlay .closebtn {
+.closebtn {
     position: absolute;
-    top: 20px;
     right: 45px;
     font-size: 60px;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .svlogo {
@@ -68,4 +65,16 @@ nav{
   color: white;
   font-size: 30px;
   padding-left: 15px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.dropdown-header {
+  font-size: 3vw;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 15px;
+  white-space: pre-wrap;
 }

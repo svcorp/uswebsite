@@ -1,2 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+
+/*Product page common styling*/
+.product-top-section {
+  height: 400px;
+  background-color: black;
+}
+
+h1{
+  color: white;
+  font-size: 38px;
+  padding-top: 100px;
+}
+
+.product-description-title{
+  /*width: 60%;*/
+  /*display: inline-block;*/
+  z-index:10;
+  position: relative;
+}
+
+.product-descriptions{
+  font-size: 1.9vw;
+  padding-top: 10px;
+  display: inline-block;
+}

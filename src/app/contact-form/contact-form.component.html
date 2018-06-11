@@ -42,7 +42,7 @@
         <input type="text" id="message" formControlName="message" class="form-control">
         <span *ngIf="!contactForm.get('message').valid && contactForm.get('message').touched" class="help-block"> Please enter a valid message! </span>
       </div>
-      <button type="submit" [disabled]="form.invalid" class="btn btn-primary form-button">Submit</button>
+      <button type="submit" class="btn btn-primary form-button">Submit</button>
     </form>
   </div>
 

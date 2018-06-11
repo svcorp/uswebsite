@@ -1,0 +1,309 @@
+<div class="container-fluid product-top-section">
+  <h1> PA201 Smart Sound & Vibration Analyzer</h1>
+</div>
+<div class="container-fluid product-page-pa-201">
+  <div class="product-description-title">
+    <h2>Basic Features</h2></div>
+    <ul class="product-descriptions">
+      <li>IEPE Microphone, IEPE Accelerometer Connection</li>
+      <li>TimeSignal Recording,PlaybackFunction(WaveFile)</li>
+      <li>Real-time Hearing in Measuring Mode(Head Phone Option)</li>
+      <li>Sensor Calibration : Sensitivity Calibration by S/W</li>
+      <li>Input Signal Gain : 2, 4, 8, 16, 32, 64 Times Selectable</li>
+      <li>Auto Scale(Y-axis) and Peak Detection</li>
+      <li>Start Measuring Time Delay Function(pre-trigger)</li>
+      <li>Recording Information Setup(Objective and Axis etc.)</li>
+      <li>Measurement Configuration Saving, Loading and Recall from File</li>
+      <li>FFT Data Recording and Comparative Analysis(ref File)</li>
+      <li>Wave Replay and Select Part Function</li>
+      <li>Data Export : Text, Excel, Matlab, BMP, JPEG</li>
+      <li>Overload Detector and Alert</li>
+    </ul>
+    <img src="assets/images/PA_201_main.jpg" alt="pa201-product-img" class="product-image product-image-main">
+</div>
+<div class="container channel-select-botton-box text-center">
+  <!-- <div class="row">
+    <div class="col-sm-4 channel-1-button" (click)="setChannel('ch1');" [style.background-color]="getStyle()" aria-pressed="false">1 Channel</div>
+    <div class="col-sm-4 channel-2-button" (click)="setChannel('ch2');" [style.background-color]="getStyle()" aria-pressed="true">2 Channel</div>
+    <div class="col-sm-4 channel-3-button" (click)="setChannel('ch3');" [style.background-color]="getStyle()" aria-pressed="true">3 Channel</div>
+  </div> -->
+  <div class="btn-group btn-group-justified" role="group">
+    <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default" (click)="setChannel('ch1');">1 Channel</button></div>
+    <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default" (click)="setChannel('ch2');">2 Channel</button></div>
+    <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default" (click)="setChannel('ch3');">3 Channel</button></div>
+  </div>
+</div>
+<div class="container-fluid channel-select-botton-box">
+  <ul class="nav nav-tabs nav-justified">
+    <li role="presentation" class="active tabs"><a (click)="setChannel('ch1')">1 Channel</a></li>
+    <li role="presentation"  class="tabs"><a (click)="setChannel('ch2')">2 Channel</a></li>
+    <li role="presentation" class="tabs"><a (click)="setChannel('ch3')">3 Channel</a></li>
+  </ul>
+</div>
+<ng-template [ngIf]="currentChannel==='ch1'" >
+  <div class="container-fluid product-page-pa-201 product-page-section-2">
+    <div class="product-description-title">
+      <h2>Software Options</h2></div>
+      <ul class="product-descriptions">
+        <li>Vibration Level Meter(VLM)</li>
+        <li>Sound Level Meter(SLM)</li>
+        <li>Ship Vibration Level Meter(SVLM)</li>
+        <li>FFT Analysis(FFT)</li>
+        <li>FFT-based Ocatave Analysis(OCT)</li>
+        <li>Digital Filter-based Octave Analysis(DOCT)</li>
+        <li>Spectrogram Analysis(SPEC)</li>
+        <li>FFT-based RPM Meter(RPM)</li>
+      </ul>
+    </div>
+    <div class="container-fluid product-page-pa-201 product-page-section-2">
+    <div class="product-description-title">
+      <h2>Main Features</h2></div>
+      <ul class="product-descriptions">
+        <li>General Purpose Class 1 or 2 Sound Measurements to the latest International Standards </li>
+        <li>Frequency Range : 0.5-16kHz(Default) / 0.5-20kHz(Option)</li>
+        <li>Sampling Frequency : 32768Hz(Default) / 51200Hz(Option)</li>
+        <li>Dynamic Range : >120dB</li>
+        <li>High-pass Filter : 1Hz, 5Hz, 10Hz</li>
+        <li>Ship Vibration Fliter(ISO 6954 : 2000) Application</li>
+        <li>Lp, Leq, Le, Lmax, Lmin, Ln, Lpeak Data Measure & Logging(Continuous 2 Months)</li>
+        <li>Leq, Lp, Lpeak, LAeq, Lceq Simultaneous Logging in Octave Mode</li>
+        <li>Long Time Recording (> Wave Recording 1hour x 10 times or > 64 days (Leq per 1s) or >30 days(1/3 Octave) at 4GB SD Memory)</li>
+        <li>Data Transfer using SD Memory or USB</li>
+        <li>Start/Stop Time Pre-setting, Average Time Pre-setting</li>
+        <li>Measurement Start Using Internal Trigger</li>
+        <li>Auto Wind Screen Detection & Compensation, Diffusion Area Compensation</li>
+        <li>Back Erase Function : Erase 5 seconds long data after Temporary
+        Measurement Stop</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-2">
+    <div class="product-description-title">
+      <h2>Spectrogram Analysis (SPEC)</h2></div>
+      <ul class="product-descriptions">
+        <li>Frequency : Selectable 100Hz - 16kHz</li>
+        <li>Buffer Size: Selectable 256, 512, 1024, 2048, 4096 (Max 2000 Lines)</li>
+        <li>Window : Rectangular, Hanning, Flattop</li>
+        <li>Weight : A, B, C, D, E</li>
+        <li>Display : Time(X)-Frequency(Y)-Amplitude(Z : Color-coded)</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-2">
+    <div class="product-description-title">
+      <h2>Ship Vibration Level Meter (SVLM) (ISO 6954:2000)</h2></div>
+      <ul class="product-descriptions">
+        <li>All Function Support of General VLM</li>
+        <li>Sampling Frequency : 2048Hz</li>
+        <li>Ship Vibration Filter (ISO 6954(2000))</li>
+        <li>Crest Factor</li>
+        <li>FFT-based Octave Analysis Support(1/1, 1/3) :<br>
+        - 2048 Buffer Size, Hanning Window, 75% Overlap, - Exponential Average</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-2">
+    <div class="product-description-title">
+      <h2>FFT-based RPM Meter (RPM)</h2></div>
+      <ul class="product-descriptions">
+        <li>Input Sensor : Accelerometer</li>
+        <li>RPM Calculation Method : Peak Detection of Frequency of
+        1st Order (manual)</li>
+        <li>Max. RPM : 96000 RPM (4096Hz Sampling Freq.)</li>
+        <li>4096 Buffer Size, Hanning Window, Linear Average</li>
+        <li>Picket Fence Error Correction</li>
+      </ul>
+  </div>
+</ng-template>
+<ng-template [ngIf]="currentChannel==='ch2'">
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>Software Options</h2></div>
+      <ul class="product-descriptions">
+        <li>Vibration Level Meter(VLM)</li>
+        <li>TTL-based RPM and FFT-based RPM Meter(RPM)</li>
+        <li>IRD 810 Filter Buit-in / ERP Support(Required Customizing)</li>
+        <li>Temperature Display</li>
+        <li>FFT Analysis(FFT)</li>
+        <li>FFT-based Octave Analysis(OCT)</li>
+        <li>Digital Filter-based Octave Analysis(DOCT)</li>
+        <li>Spectrogram Analysis(SPEC)</li>
+        <li>Sound Level Meter(SLM)</li>
+        <li>Ship Vibration Level Meter(SVLM)</li>
+      </ul>
+    </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>Main Features</h2></div>
+      <ul class="product-descriptions">
+        <li>IEPE Type Accelerometer, Microphone Signal Input</li>
+        <li>Infrared Temperature Sensor Input(DC Voltage) Option</li>
+        <li>Laser Type RPM Sensor Input Option</li>
+        <li>Bar-code Scanner Option (Product information can be synchronized
+        with measurement data)</li>
+        <li>Mini Digital Camera Option (Measurement location & circumstance capture
+        image can be synchronized with measurement data)</li>
+        <li>Power Plant, Rotational Machine, Automotive, Electronics Diagnosis</li>
+        <li>IRD 810 Filter, Human Vibration Filter(ISO 8041)</li>
+        <li>Crest Factor Calculation</li>
+        <li>Frequency Range : 0.5-16kHz</li>
+        <li>Sampling Frequency : 32768Hz</li>
+        <li>Dynamic Range : >100dB</li>
+        <li>High Pass Filter : 1Hz, 10Hz</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>Vibration Level Meter(VLM)</h2></div>
+      <ul class="product-descriptions">
+        <li>Sampling Frequency : 32768Hz</li>
+        <li>Filter:IRD810EmulationFilter5.8-2kHz &23-10kHz<br>
+            High-pass Filter with 1Hz, 5Hz, 10Hz & 100-15kHz<br>
+            Band-pass Filter with 0.5-200Hz, 1-1kHz, 10-500Hz & 10-1kHz Butterworth Filter with 1.6kHz, 200Hz, 100Hz<br>
+            Whole-body Combined Filter (ISO6954(2000))</li>
+        <li>Time Data, Filtered FFT(< 4096Hz) or Octave Data Simultaneous Measurement & Recording</li>
+        <li>Features as 1-Ch VLM</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>RPM Meter(RPM)</h2></div>
+      <ul class="product-descriptions">
+        <li>TTL-Based RPM Measurement using Laser Tachometer</li>
+        <li>Measuring Distance : 0.05 - 2m</li>
+        <li>Measuring Range : 10Hz - 16kHz (1,000,000rpm)</li>
+        <li>Output : 0.1 - 5VDC</li>
+        <li>Size : Ø22 x 50mm</li>
+        <li> Temperature Range : -10 - +60°C</li>
+        <li>Vibration & RPM Synchronous Display Option(customized)</li>
+        <li>Basic FFT-Based RPM Measurement using Accelerometer</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>IRD 810 Filter Mode(ERP Support)</h2></div>
+      <ul class="product-descriptions">
+        <li>Reinterpretation & Mathematical Modeling of the Analog Circuit of IRD810 Equipment</li>
+        <li>Vibration Meter Emulation Mode using Digital Filter type Algorithm</li>
+        <li>FFT Data Output Integration Process</li>
+        <li>ERP Client Software Development Support</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>Temperature Measurement (TEMP)</h2></div>
+      <ul class="product-descriptions">
+        <li>Temp. Display connecting with Infrared Thermometer</li>
+        <li>Temp. Data Logging</li>
+        <li>Direct Power Supply for Sensor</li>
+        <li>Measurement Range : -70 to +380°C</li>
+        <li>Operation Temp. : -40°C to 125°C without Cooling Device</li>
+        <li>Temp. Resolution : 0.02 °C</li>
+        <li>Accuracy :±0.5 °C to±4 °C</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-3">
+    <div class="product-description-title">
+      <h2>Spectrogram Analysis (SPEC)</h2></div>
+      <ul class="product-descriptions">
+        <li>Frequency : Selectable 100Hz - 16kHz</li>
+        <li>Buffer Size : Selectable 256, 512, 1024, 2048, 4096 (Max. 2000 Lines)</li>
+        <li>Window : Rectangular, Hanning, Flattop</li>
+        <li>Weight : A, B, C, D, F</li>
+        <li>Display : Time(X)-Frequency(Y)-Amplitude(Z: Color-coded)</li>
+      </ul>
+  </div>
+</ng-template>
+<ng-template [ngIf]="currentChannel==='ch3'">
+  <div class="container-fluid product-page-pa-201 product-page-section-4">
+    <div class="product-description-title">
+      <h2>Software Options</h2></div>
+      <ul class="product-descriptions">
+        <li>Vibration Level Meter(VLM)</li>
+        <li>Human, Ship Vibration Level Meter(HVLM, SVLM)</li>
+        <li>Hand-Arm Vibration</li>
+        <li>General Vibration Level Meter(8kHz/Channel)</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-4">
+  <div class="product-description-title">
+    <h2>Main Features</h2></div>
+    <ul class="product-descriptions">
+      <li>Vibration Measurement According to International Vibration Regulations</li>
+      <li>Human Vibration(ISO 8041), Ship Vibration(ISO 6954:2000) Measurement</li>
+      <li>Hand-Arm Vibration(ISO 5349:2001) Measurement</li>
+      <li>General Vibration(ISO 10816) Measurement</li>
+      <li>Frequency Range : 0.5 - 80Hz(Vibration Acceleration & Velocity Level), 0.5 - 8kHz(Vibration Acceleration & Velocity , Displacement Level)</li>
+      <li>Dynamic Range : >90dB</li>
+      <li>Human Vibration Filter : Wb, Wc, Wd, We, Wf, Wj, Wk, Wm</li>
+      <li>Ship Vibration Filter : Whole-body Combined(W.b. Combined)</li>
+      <li>Hand-Arm Vibration Filter : Wh</li>
+      <li>RMS, MTVV, MSDV, VDV, PEAK, P2P, cf Value Output / Each Channel</li>
+      <li>RMS, Min, Max Value Output / Each Channel</li>
+      <li>Digital Value, Trace, FFT, Octave Graph Display / Each Channel</li>
+      <li>Different 5 types Display, Easy Display Change</li>
+      <li>Overall Value Display Support</li>
+      <li>Peak Value Auto Detection & Y-axis Auto Scaling</li>
+      <li>X-axis(Frequency axis) Log-scale Display Support</li>
+      <li>Long time Data Storage (with Max. 8GB SD Memory Card)</li>
+      <li>Storage, Sensor & Analysis Information Confirmation Support</li>
+      <li>Trace, Octave, FFT Graph Control of the Logged Data</li>
+    </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-4">
+    <div class="product-description-title">
+      <h2>Human Vibration Level Meter (HVLM) - (ISO 8041, 2631-2)</h2></div>
+      <ul class="product-descriptions">
+        <li>Sampling Frequency : 512Hz</li>
+        <li>Whole Body Filter (ISO 2631-2, ISO 8041)</li>
+        <li>Frequency weighted Acceleration or Velocity Value<br>
+            - Trace, FFT, FFT-based Octave(1/1, 1/3) Display<br>
+            - RMS, MTVV, MSDV, VDV, PEAK, P2P, cf Value Output / Each Channel<br>
+            - Max. 4096 Buffer Size, Hanning Window, 75% Overlap<br>
+            - Exponential Average, 3-axis combined value Display</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-4">
+    <div class="product-description-title">
+      <h2>Ship Vibration Level Meter (SVLM) - (ISO 6954:2000)</h2></div>
+      <ul class="product-descriptions">
+        <li>Sampling Frequency : 512Hz</li>
+        <li>Ship Vibration Filter (ISO 6954(2000))</li>
+        <li>Frequency weighted Acceleration or Velocity Value<br>
+            - Trace, FFT, FFT-based Octave(1/1, 1/3) Display<br>
+            - RMS, Min, Max value Output / Each Channel<br>
+            - Max. 4096 buffer Size, Hanning Window<br>
+            - Exponential Average</li>
+        <li>Built-in Low Frequency VLM(<250Hz/Channel)C</li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-4">
+    <div class="product-description-title">
+      <h2>Hand-Arm Vibration – (ISO 5349:2001)</h2></div>
+      <ul class="product-descriptions">
+        <li>Sampling Frequency : 16384Hz, 8192Hz</li>
+        <li>Hand-Arm Vibration Filter (ISO 5349:2001)</li>
+        <li>Frequency weighted Acceleration Value<br>
+            - Trace Display<br>
+            - RMS, Min, Max Value Output / Each Channel<br>
+            - Daily Vibration Exposure A(8)
+        </li>
+      </ul>
+  </div>
+  <div class="container-fluid product-page-pa-201 product-page-section-4">
+    <div class="product-description-title">
+      <h2>General Vibration Level Meter (VLM) – (ISO 10816)</h2></div>
+      <ul class="product-descriptions">
+        <li>Sampling Frequency : 16384Hz, 8192Hz</li>
+        <li>Filter : High-pass Filter(1, 2, 5, 10, 20Hz)</li>
+        <li>3 Detectors per channel : Acceleration, Velocity, Displacement Simultaneous Display</li>
+        <li>Display Type : Digital Value, Time Trace, FFT, 1/1, 1/3 Octave Graph / Each Channel</li>
+        <li>Integration Time Changing Option, Averaging Mode</li>
+        <li>Measurement Value : RMS, Peak, Peak-to-Peak, Min, Max</li>
+        <li>Unit : Acceleration m/s2, cm/s2, mm/s2, μm/s2, g, dB<br>
+            Velocity m/s, cm/s, mm/s, μm/s, dB <br>
+            Displacement m, cm, mm, μm, dB</li>
+        <li>Real Time Measurement Data and Wave File Recording and Playing</li>
+      </ul>
+  </div>
+</ng-template>
