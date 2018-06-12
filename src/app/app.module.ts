@@ -1,6 +1,3 @@
-import { Ch1Component } from './products/pa-201/ch1/ch1.component';
-import { Ch2Component } from './products/pa-201/ch2/ch2.component';
-import { Ch3Component } from './products/pa-201/ch3/ch3.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -30,9 +27,6 @@ export const appRoutes: Routes = [
 
   { path: 'products/sv-1', component: Sv1Component },
   { path: 'products/pa-201',component: Pa201Component},
-  // { path: 'products/pa-201/ch1',component: Ch1Component},
-  // { path: 'products/pa-201/ch2',component: Ch2Component},
-  // { path: 'products/pa-201/ch3',component: Ch3Component}
 
 ];
 

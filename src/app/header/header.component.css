@@ -6,6 +6,12 @@ nav{
   margin-bottom: 0;
 }
 
+.logo-image {
+  height: 50px;
+  top: 5px;
+  position: absolute;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -59,13 +65,13 @@ nav{
   color: #f1f1f1;
 }
 
-.svlogo {
+/*.svlogo {
   font-weight: bold;
   font-style: 'Alfa Slab One', cursive;
   color: white;
   font-size: 30px;
-  padding-left: 15px;
-}
+  padding-left: 18px;
+}*/
 
 ul{
   list-style-type: none;
