@@ -1,0 +1,34 @@
+.main-box-1{
+    margin-top: 100px;
+}
+
+
+.main-box-1-title{
+  color: black;
+  font-size: 7vw;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+.main-box-1-image{
+  background-color: skyblue;
+  height: 400px;
+}
+
+.main-box-2{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.main-box-2-title {
+  font-size: 4vw;
+  color: black;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.main-box-2-content{
+  font-size: 2vw;
+  color: black;
+  margin-top: 50px;
+}

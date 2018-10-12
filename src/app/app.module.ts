@@ -13,6 +13,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { Sv1Component } from './products/sv-1/sv-1.component';
 import { Pa201Component } from './products/pa-201/pa-201.component';
+import { AboutSvComponent } from './about-us/about-sv/about-sv.component';
+import { DistributorsComponent } from './about-us/distributors/distributors.component';
 
 
 export const appRoutes: Routes = [
@@ -27,6 +29,8 @@ export const appRoutes: Routes = [
 
   { path: 'products/sv-1', component: Sv1Component },
   { path: 'products/pa-201',component: Pa201Component},
+  { path: 'about-us/about-sv',component: AboutSvComponent},
+  { path: 'about-us/distributors',component: DistributorsComponent}
 
 ];
 
@@ -39,6 +43,8 @@ export const appRoutes: Routes = [
     ContactFormComponent,
     Sv1Component,
     Pa201Component,
+    AboutSvComponent,
+    DistributorsComponent,
   ],
   imports: [
     BrowserModule,

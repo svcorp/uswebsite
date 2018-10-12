@@ -13,14 +13,10 @@
   margin-top: 20px;
 }
 
-/*.col-sm-4 {
-  padding: 10px;
-  border: 3px solid white ;
-}*/
-
-/*li:active{
-  background-color: skyblue;
-}*/
+.btn-group{
+  border-style: none;
+  box-sizing: inherit;
+}
 
 .product-image{
   /*float: right;*/

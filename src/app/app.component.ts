@@ -9,5 +9,5 @@ import { AngularFirestore } from 'angularfire2/firestore';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Digital SV';
+  title = 'SV Corp.';
   }
