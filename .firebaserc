@@ -1,6 +1,8 @@
 {
   "projects": {
     "default": "digital-sv",
-    "staging": "digital-sv-usa"
+    "staging": "digital-sv-usa",
+    "data send": "digital-sv-usa",
+    "functions": "digital-sv-usa"
   }
 }

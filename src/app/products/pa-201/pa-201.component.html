@@ -4,43 +4,34 @@
 <div class="container-fluid product-page-pa-201">
   <div class="product-description-title">
     <h2>Basic Features</h2></div>
-    <ul class="product-descriptions">
-      <li>IEPE Microphone, IEPE Accelerometer Connection</li>
-      <li>TimeSignal Recording,PlaybackFunction(WaveFile)</li>
-      <li>Real-time Hearing in Measuring Mode(Head Phone Option)</li>
-      <li>Sensor Calibration : Sensitivity Calibration by S/W</li>
-      <li>Input Signal Gain : 2, 4, 8, 16, 32, 64 Times Selectable</li>
-      <li>Auto Scale(Y-axis) and Peak Detection</li>
-      <li>Start Measuring Time Delay Function(pre-trigger)</li>
-      <li>Recording Information Setup(Objective and Axis etc.)</li>
-      <li>Measurement Configuration Saving, Loading and Recall from File</li>
-      <li>FFT Data Recording and Comparative Analysis(ref File)</li>
-      <li>Wave Replay and Select Part Function</li>
-      <li>Data Export : Text, Excel, Matlab, BMP, JPEG</li>
-      <li>Overload Detector and Alert</li>
-    </ul>
-    <img src="assets/images/PA_201_main.jpg" alt="pa201-product-img" class="product-image product-image-main">
-</div>
-<div class="container channel-select-botton-box text-center">
-  <!-- <div class="row">
-    <div class="col-sm-4 channel-1-button" (click)="setChannel('ch1');" [style.background-color]="getStyle()" aria-pressed="false">1 Channel</div>
-    <div class="col-sm-4 channel-2-button" (click)="setChannel('ch2');" [style.background-color]="getStyle()" aria-pressed="true">2 Channel</div>
-    <div class="col-sm-4 channel-3-button" (click)="setChannel('ch3');" [style.background-color]="getStyle()" aria-pressed="true">3 Channel</div>
-  </div> -->
-  <div class="btn-group btn-group-justified" role="group">
-    <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default" (click)="setChannel('ch1');">1 Channel</button></div>
-    <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default" (click)="setChannel('ch2');">2 Channel</button></div>
-    <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default" (click)="setChannel('ch3');">3 Channel</button></div>
-  </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <ul class="product-descriptions">
+          <li>IEPE Microphone, IEPE Accelerometer Connection</li>
+          <li>TimeSignal Recording,PlaybackFunction(WaveFile)</li>
+          <li>Real-time Hearing in Measuring Mode(Head Phone Option)</li>
+          <li>Sensor Calibration : Sensitivity Calibration by S/W</li>
+          <li>Input Signal Gain : 2, 4, 8, 16, 32, 64 Times Selectable</li>
+          <li>Auto Scale(Y-axis) and Peak Detection</li>
+          <li>Start Measuring Time Delay Function(pre-trigger)</li>
+          <li>Recording Information Setup(Objective and Axis etc.)</li>
+          <li>Measurement Configuration Saving, Loading and Recall from File</li>
+          <li>FFT Data Recording and Comparative Analysis(ref File)</li>
+          <li>Wave Replay and Select Part Function</li>
+          <li>Data Export : Text, Excel, Matlab, BMP, JPEG</li>
+          <li>Overload Detector and Alert</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/images/PA_201_main1.png" alt="pa201-product-img" class="product-image product-image-main">
+      </div>
+    </div>
 </div>
 <div class="container-fluid channel-select-botton-box">
   <ul class="nav nav-tabs nav-justified">
-    <li role="presentation" class="active tabs"><a (click)="setChannel('ch1')">1 Channel</a></li>
-    <li role="presentation"  class="tabs"><a (click)="setChannel('ch2')">2 Channel</a></li>
-    <li role="presentation" class="tabs"><a (click)="setChannel('ch3')">3 Channel</a></li>
+    <li role="presentation" class="active" [ngClass]="{'active' : currentChannel == 'ch1'}"><a (click)="setChannel('ch1')">1 Channel</a></li>
+    <li role="presentation"  class="tabs" [ngClass]="{'active' : currentChannel == 'ch2'}"><a (click)="setChannel('ch2')" >2 Channel</a></li>
+    <li role="presentation" class="tabs" [ngClass]="{'active' : currentChannel == 'ch3'}"><a (click)="setChannel('ch3')" >3 Channel</a></li>
   </ul>
 </div>
 <ng-template [ngIf]="currentChannel==='ch1'" >

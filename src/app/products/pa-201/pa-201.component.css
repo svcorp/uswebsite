@@ -1,31 +1,19 @@
 .product-page-pa-201 {
   background-color: white;
-  padding-top: 50px;
   padding-left: 10vw;
   display: inline-block;
-  /*padding-right: 10vw;*/
+  margin-bottom: 10vh;
 }
 
 .channel-select-botton-box{
-  /*background-color: lightgray;*/
   font-size: 2.2vw;
   font-weight: bold;
   margin-top: 20px;
 }
 
-.btn-group{
-  border-style: none;
-  box-sizing: inherit;
-}
-
 .product-image{
-  /*float: right;*/
-  display: inline-block;
-  width: 60%;
+  width: 70%;
   position:relative;
   z-index: 1;
-}
-
-.btn{
-  width: 160%;
+  margin: auto;
 }

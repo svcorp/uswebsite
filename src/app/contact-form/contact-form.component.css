@@ -1,10 +1,9 @@
 .contact-us-form-box {
-  /*width: 100%;*/
   z-index: 120;
   position: relative;
   background-color: white;
+  margin-top: 20vh;
 }
-
 
 .contact-form-table {
   margin-top: 50px;

@@ -1,22 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import { DISTRIBUTORSLIST } from './distributors-list.component';
 
 @Component({
   selector: 'app-distributors',
   templateUrl: './distributors.component.html',
   styleUrls: ['./distributors.component.css']
 })
+
 export class DistributorsComponent implements OnInit {
-  country: string;
-  company: string;
-  name: string;
-  phone: number;
-  email: string;
+  currentDistributorsRegion:any;
+  distributors = DISTRIBUTORSLIST;
 
-
-  
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    this.currentDistributorsRegion = 'all';
+  }
+
+  onSelectDistributorsRegion(DistributorsRegion) {
+    if(DistributorsRegion === this.currentDistributorsRegion ) return;
+    if(DistributorsRegion !== this.currentDistributorsRegion ){
+      this.currentDistributorsRegion= DistributorsRegion;
+    }
   }
 
 }

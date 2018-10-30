@@ -44,17 +44,6 @@ export class ContactFormComponent implements OnInit {
 
       this.db.database.ref('/messages').push(formRequest);
       this.contactForm.reset();
+
   }
 }
-
-
-
-    // this.contactForm = new FormGroup({
-    //   'name': new FormControl(null, Validators.required),
-    //   'email': new FormControl(null, [Validators.required, Validators.email]),
-    //   'company': new FormControl(null, Validators.required),
-    //   'phone': new FormControl(null, Validators.required),
-    //   'product': new FormControl(null, Validators.required),
-    //   'quantity': new FormControl(null, Validators.required),
-    //   'message': new FormControl(null, Validators.required)
-    // })

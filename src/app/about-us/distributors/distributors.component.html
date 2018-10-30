@@ -1,3 +1,57 @@
-<p>
-  distributors works!
-</p>
+<div class="container-fluid product-top-section">
+  <h1> Our Distributors</h1>
+  <h3>Find a SV Product Distributor near you.</h3>
+</div>
+<div class="container-fluid">
+  <div class="distributor-select-box">
+    <ul class="nav nav-pills" role="tablist">
+      <li role="presentation" class="active" [ngClass]="{'active' : currentDistributorsRegion == 'all'}"><a (click)="onSelectDistributorsRegion('all')">All</a></li>
+      <li role="presentation"  class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'europe'}"><a (click)="onSelectDistributorsRegion('europe')" >Europe</a></li>
+      <li role="presentation" class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'asia'}"><a (click)="onSelectDistributorsRegion('asia')" >Asia</a></li>
+      <li role="presentation" class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'americas'}"><a (click)="onSelectDistributorsRegion('americas')" >Americas</a></li>
+    </ul>
+  </div>
+</div>
+<ng-template [ngIf]="currentDistributorsRegion==='all'" >
+<div class="container-fluid text-center">
+  <div class="col-sm-4" *ngFor="let c of distributors">
+    {{ c.continent }} <br />
+    {{ c.country }}
+  </div>
+</div>
+</ng-template>
+
+<ng-template [ngIf]="currentDistributorsRegion==='europe'" >
+<div class="container-fluid text-center">
+  <div class="col-sm-4" *ngFor="let c of distributors" >
+    <div *ngIf="c.continent == 'EUROPE'">
+      {{ c.continent }} <br />
+      {{ c.country }}
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<ng-template [ngIf]="currentDistributorsRegion==='asia'" >
+<div class="container-fluid text-center">
+  <div class="col-sm-4" *ngFor="let c of distributors" >
+    <div *ngIf="c.continent == 'ASIA'">
+      {{ c.continent }} <br />
+      {{ c.country }}
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<ng-template [ngIf]="currentDistributorsRegion==='americas'" >
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let c of distributors" >
+      <div *ngIf="c.continent == 'AMERICAS'">
+        {{ c.continent }} <br />
+        {{ c.country }}
+      </div>
+    </div>
+  </div>
+</div>
+</ng-template>

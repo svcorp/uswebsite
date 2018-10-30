@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pa201Component implements OnInit {
   currentChannel:any;
-  showStyle: false;
-  showStyle2: false;
-  showStyle3: false;
 
   constructor() { }
 
@@ -22,13 +19,4 @@ export class Pa201Component implements OnInit {
       this.currentChannel = channel;
     }
   }
-  // getStyle(){
-  //   if(this.currentChannel == 'ch1'){
-  //     return "skyblue";}
-  //   if(this.currentChannel !== 'ch1'){
-  //     return "";
-  //   }
-  // }
-
-
 }
