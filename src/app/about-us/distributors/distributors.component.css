@@ -1,0 +1,22 @@
+.distributors-continent-tab{
+ width: 23.8vw;
+ padding-top: 5vh;
+ padding-bottom: 5vh;
+ font-size: 1.7em;
+}
+
+.countries-row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country-box{
+  height: 35vh;
+  border-collapse: separate;
+  margin: 2vh;
+  background-size: cover;
+}
+
+.active{
+  border-bottom-style: outset;
+}

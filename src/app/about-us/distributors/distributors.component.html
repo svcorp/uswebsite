@@ -2,56 +2,93 @@
   <h1> Our Distributors</h1>
   <h3>Find a SV Product Distributor near you.</h3>
 </div>
-<div class="container-fluid">
-  <div class="distributor-select-box">
-    <ul class="nav nav-pills" role="tablist">
-      <li role="presentation" class="active" [ngClass]="{'active' : currentDistributorsRegion == 'all'}"><a (click)="onSelectDistributorsRegion('all')">All</a></li>
-      <li role="presentation"  class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'europe'}"><a (click)="onSelectDistributorsRegion('europe')" >Europe</a></li>
-      <li role="presentation" class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'asia'}"><a (click)="onSelectDistributorsRegion('asia')" >Asia</a></li>
-      <li role="presentation" class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'americas'}"><a (click)="onSelectDistributorsRegion('americas')" >Americas</a></li>
-    </ul>
-  </div>
-</div>
-<ng-template [ngIf]="currentDistributorsRegion==='all'" >
-<div class="container-fluid text-center">
-  <div class="col-sm-4" *ngFor="let c of distributors">
-    {{ c.continent }} <br />
-    {{ c.country }}
-  </div>
-</div>
-</ng-template>
 
-<ng-template [ngIf]="currentDistributorsRegion==='europe'" >
-<div class="container-fluid text-center">
-  <div class="col-sm-4" *ngFor="let c of distributors" >
-    <div *ngIf="c.continent == 'EUROPE'">
-      {{ c.continent }} <br />
-      {{ c.country }}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="distributor-select-box">
+      <ul class="nav navbar-nav distributors-continent-tabs text-center">
+        <li role="presentation" class="active" [ngClass]="{'active' : currentDistributorsRegion == 'all'}"><a class="distributors-continent-tab" (click)="onClickContainer('all')">All</a></li>
+        <li role="presentation"  class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'europe'}"><a class="distributors-continent-tab" (click)="onClickContainer('europe')" >Europe</a></li>
+        <li role="presentation" class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'asia'}"><a class="distributors-continent-tab" (click)="onClickContainer('asia')" >Asia</a></li>
+        <li role="presentation" class="tabs" [ngClass]="{'active' : currentDistributorsRegion == 'americas'}"><a class="distributors-continent-tab" (click)="onClickContainer('americas')" >Americas</a></li>
+      </ul>
     </div>
   </div>
-</div>
-</ng-template>
+</nav>
 
-<ng-template [ngIf]="currentDistributorsRegion==='asia'" >
-<div class="container-fluid text-center">
-  <div class="col-sm-4" *ngFor="let c of distributors" >
-    <div *ngIf="c.continent == 'ASIA'">
-      {{ c.continent }} <br />
-      {{ c.country }}
-    </div>
-  </div>
-</div>
-</ng-template>
-
-<ng-template [ngIf]="currentDistributorsRegion==='americas'" >
-<div class="container-fluid text-center">
+<ng-template [ngIf]="currentDistributorsRegion === 'all'" >
+<div class="container-fluid text-center" [hidden]="!show">
   <div class="row">
-    <div class="col-sm-4" *ngFor="let c of distributors" >
-      <div *ngIf="c.continent == 'AMERICAS'">
-        {{ c.continent }} <br />
-        {{ c.country }}
-      </div>
+    <div class="col-sm-3" *ngFor="let c of countries">
+      <a (click)="onClickCountry(c.country)">
+        <div class="country-box" [style.background-image]="'url(' + c.imageUrl + ')'">
+            {{ c.continent }} <br />
+            {{ c.country }}
+        </div>
+      </a>
     </div>
   </div>
 </div>
+</ng-template>
+
+<ng-template [ngIf]="currentDistributorsRegion === 'europe'" >
+<div class="container-fluid text-center" [hidden]="!show">
+  <div class="countries-row">
+    <div class="col-sm-3" *ngFor="let c of countries" >
+      <a (click)="onClickCountry(c.country)">
+        <div class="country-box" *ngIf="c.continent == 'EUROPE'" [style.background-image]="'url(' + c.imageUrl + ')'">
+            {{ c.continent }} <br />
+            {{ c.country }}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<ng-template [ngIf]="currentDistributorsRegion === 'asia'" >
+<div class="container-fluid text-center" [hidden]="!show">
+  <div class="row countries-row">
+    <div class="col-sm-3" *ngFor="let c of countries" >
+      <a (click)="onClickCountry(c.country)">
+        <div class="country-box" *ngIf="c.continent == 'ASIA'" [style.background-image]="'url(' + c.imageUrl + ')'">
+            {{ c.continent }} <br />
+            {{ c.country }}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<ng-template [ngIf]="currentDistributorsRegion === 'americas'" >
+<div class="container-fluid text-center" [hidden]="!show">
+  <div class="row countries-row">
+    <div class="col-sm-3" *ngFor="let c of countries" >
+      <a (click)="onClickCountry(c.country)">
+        <div class="country-box" *ngIf="c.continent == 'AMERICAS'" [style.background-image]="'url(' + c.imageUrl + ')'">
+            {{ c.continent }} <br />
+            {{ c.country }}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<ng-template [ngIf]="currentCountry !== ''">
+  <div class="container-fluid">
+    <h3> {{ currentCountry }} </h3>
+     <div class="row">
+       <div class="distributors-box" *ngFor="let d of distributors">
+         <div class="col-sm-4" *ngIf="d.country == currentCountry">
+          {{ d.company }} <br />
+          {{ d.name }} <br />
+          Phone: {{ d.phone }} <br />
+          Fax: {{ d.fax }} <br />
+          {{ d.email }}
+         </div>
+       </div>
+     </div>
+  </div>
 </ng-template>

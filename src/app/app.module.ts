@@ -16,6 +16,7 @@ import { Pa201Component } from './products/pa-201/pa-201.component';
 import { AboutSvComponent } from './about-us/about-sv/about-sv.component';
 import { DistributorsComponent } from './about-us/distributors/distributors.component';
 import { DISTRIBUTORSLIST } from './about-us/distributors/distributors-list.component';
+import { COUNTRIESLIST } from './about-us/distributors/countries-list.component';
 
 
 export const appRoutes: Routes = [
