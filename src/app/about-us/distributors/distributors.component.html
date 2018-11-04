@@ -22,8 +22,8 @@
     <div class="col-sm-3" *ngFor="let c of countries">
       <a (click)="onClickCountry(c.country)">
         <div class="country-box" [style.background-image]="'url(' + c.imageUrl + ')'">
-            {{ c.continent }} <br />
-            {{ c.country }}
+          <p>{{ c.continent }}</p> <br />
+          <p>{{ c.country }}</p>
         </div>
       </a>
     </div>
@@ -33,12 +33,12 @@
 
 <ng-template [ngIf]="currentDistributorsRegion === 'europe'" >
 <div class="container-fluid text-center" [hidden]="!show">
-  <div class="countries-row">
-    <div class="col-sm-3" *ngFor="let c of countries" >
+  <div class="row">
+    <div class="col-sm-3 countries-box" *ngFor="let c of countries" >
       <a (click)="onClickCountry(c.country)">
         <div class="country-box" *ngIf="c.continent == 'EUROPE'" [style.background-image]="'url(' + c.imageUrl + ')'">
-            {{ c.continent }} <br />
-            {{ c.country }}
+            <p>{{ c.continent }} </p> <br />
+            <p>{{ c.country }}</p>
         </div>
       </a>
     </div>
@@ -48,12 +48,12 @@
 
 <ng-template [ngIf]="currentDistributorsRegion === 'asia'" >
 <div class="container-fluid text-center" [hidden]="!show">
-  <div class="row countries-row">
+  <div class="row">
     <div class="col-sm-3" *ngFor="let c of countries" >
       <a (click)="onClickCountry(c.country)">
         <div class="country-box" *ngIf="c.continent == 'ASIA'" [style.background-image]="'url(' + c.imageUrl + ')'">
-            {{ c.continent }} <br />
-            {{ c.country }}
+          <p>{{ c.continent }} </p> <br />
+          <p>{{ c.country }}</p>
         </div>
       </a>
     </div>
@@ -63,12 +63,12 @@
 
 <ng-template [ngIf]="currentDistributorsRegion === 'americas'" >
 <div class="container-fluid text-center" [hidden]="!show">
-  <div class="row countries-row">
+  <div class="row">
     <div class="col-sm-3" *ngFor="let c of countries" >
       <a (click)="onClickCountry(c.country)">
         <div class="country-box" *ngIf="c.continent == 'AMERICAS'" [style.background-image]="'url(' + c.imageUrl + ')'">
-            {{ c.continent }} <br />
-            {{ c.country }}
+          <p>{{ c.continent }} </p> <br />
+          <p>{{ c.country }}</p>
         </div>
       </a>
     </div>

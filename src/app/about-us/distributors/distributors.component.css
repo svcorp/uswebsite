@@ -13,8 +13,22 @@
 .country-box{
   height: 35vh;
   border-collapse: separate;
-  margin: 2vh;
+  margin: 0.5vh;
   background-size: cover;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.country-box:first-child {
+  vertical-align:top;
+  /*font-size: 1.1em;*/
+}
+
+.country-box:second-child {
+  vertical-align: middle;
+  /*font-size: 2em;*/
+  
 }
 
 .active{
