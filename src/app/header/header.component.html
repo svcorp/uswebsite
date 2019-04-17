@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar fixed-top navbar-inverse">
   <div class="container-fluid">
     <div class="nav navbar-nav">
         <span class="nav-menu-bar" style="font-size:40px;cursor:pointer;color:white;" (click)="openNav()">&#9776;</span>
@@ -16,14 +16,15 @@
        <li class="dropdown-header">PRODUCTS</li>
        <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/products/sv-1">SV-1 Blast/environment vibration analyzer</a></li>
        <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/products/pa-201">PA-201 3 Channel RealWave Analyzer</a></li>
-       <li class="overlay-content-item" (click)="closeNav()"><a href="#">PM-101 Vibration Level Meter</a></li>
-       <li class="overlay-content-item"><a href="#">S11 Sound Level Meter</a></li>
-       <li class="overlay-content-item"><a href="#">ST1 Tachometer</a></li>
-       <li class="overlay-content-item"><a href="#">Microphone</a></li>
-       <li class="overlay-content-item"><a href="#">Speed Indicator</a></li>
-       <li class="overlay-content-item"><a href="#">MA-301 Low Frequency Accelerometer</a></li>
-       <li class="overlay-content-item"><a href="#">Time of Flight</a></li>
-       <li class="divider"></li>
+       <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/products/pm-101">PM-101 Vibration Level Meter</a></li>
+       <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/products/s-11">S11 Sound Level Meter</a></li>
+       <!-- <li class="overlay-content-item"><a href="#">ST1 Tachometer</a></li> -->
+       <!-- <li class="overlay-content-item"><a href="#">Microphone</a></li> -->
+       <!-- <li class="overlay-content-item"><a href="#">Speed Indicator</a></li> -->
+       <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/products/ma-301">MA-301 Low Frequency Accelerometer</a></li>
+       <!-- <li class="overlay-content-item"><a href="#">Time of Flight</a></li> -->
+       <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/products/sa-101">SA-101 Smart Sound Analyzer</a></li>       
+       <!-- <li class="dropdown-divider"></li> -->
      </ul>
    </li>
    <li class="col-sm-4">
@@ -32,10 +33,10 @@
        <li class="overlay-content-item"><a href="#">Laser Speed Sensor</a></li>
        <li class="overlay-content-item"><a href="#">Laser Displacement Sensor</a></li>
        <li class="overlay-content-item"><a href="#">Laser Distance Sensor</a></li>
-       <li class="overlay-content-item"><a href="#">Magnetic Speed Sensor</a></li>
-       <li class="overlay-content-item"><a href="#"> Hall Effect Speed Sensor</a></li>
-       <li class="overlay-content-item"><a href="#">Infrared Temperature Sensor</a></li>
-       <li class="divider"></li>
+       <!-- <li class="overlay-content-item"><a href="#">Magnetic Speed Sensor</a></li> -->
+       <!-- <li class="overlay-content-item"><a href="#"> Hall Effect Speed Sensor</a></li> -->
+       <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/sensors/infared-temperature">Infrared Temperature Sensor</a></li>
+       <!-- <li class="dropdown-divider"></li> -->
      </ul>
    </li>
    <li class="col-sm-4">
@@ -50,9 +51,9 @@
        <li class="dropdown-header">ABOUT</li>
        <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/about-us/about-sv">About SV Digital</a></li>
        <li class="overlay-content-item"><a href="#">Technical Support</a></li>
-       <li class="overlay-content-item"><a href="#">Our Clients</a></li>
+       <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/about-us/clients">Our Clients</a></li>
        <li class="overlay-content-item" (click)="closeNav()"><a routerLink="/about-us/distributors">Distributors</a></li>
-       <li class="divider"></li>
+       <!-- <li class="dropdown-divider"></li> -->
      </ul>
    </li>
   </ul>

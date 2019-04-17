@@ -1,0 +1,23 @@
+.product-top-section{
+  background-image: url('../../../assets/images/product-top-background.jpg');
+  background-size: 100%;
+  height: 400px;
+}
+
+.product-page-s-11{
+  background-color: white;
+  padding-top: 15vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.product-image-right{
+  height:20vh;
+}
+
+.product-page-pm-201 {
+  background-color: white;
+  padding-left: 10vw;
+  display: inline-block;
+  margin-bottom: 10vh;
+}

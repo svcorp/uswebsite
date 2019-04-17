@@ -1,6 +1,6 @@
 nav{
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.9;
   height: 60px;
   z-index: 100;
   margin-bottom: 0;
@@ -32,6 +32,7 @@ nav{
 
 .nav-menu-bar {
   right: 20px;
+  top: -4px;
   display: block;
   position: absolute;
 }
@@ -40,11 +41,10 @@ nav{
     position: relative;
     top: 8%;
     width: 100%;
-    /*text-align: center;*/
 }
 
 .overlay-content-item{
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 }
 
 .overlay a {

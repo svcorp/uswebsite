@@ -1,0 +1,37 @@
+.clients-page{
+  background-color: rgb(88,88,88);
+  height: 120%;
+}
+
+h2{
+  margin-top: 11vw;
+  color: white;
+  font-size: 4vw;
+}
+
+h3{
+  color:white;
+  padding-top: 2vh;
+}
+
+.clients-logo-box{
+  padding-top: 15vh;
+}
+
+.client-box{
+  height: 14vw;
+  width: 20vw;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 3vh;
+  transition: all 0.35s ease-in-out; 
+}
+
+.client-box:hover{
+  transform: scale(1.2);
+}
+
+.row:nth-child(11) > .client-box{
+  padding-top:3vh;
+}

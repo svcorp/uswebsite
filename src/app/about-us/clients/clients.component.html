@@ -1,0 +1,12 @@
+<div class="container-fluid clients-page">
+  <h2>Who's using us?</h2>
+  <h3>Here is a partial listing of recent and current SV customers and partners.</h3>
+  <div class="container-fluid text-center clients-logo-box">
+    <div class="row">
+      <div class="col-sm-3 client-logo-images" *ngFor="let c of clients">
+          <div class="client-box" [style.background-image]="'url(' + c.imageUrl + ')'" >
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

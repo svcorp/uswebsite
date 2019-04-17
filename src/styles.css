@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
-
+@import "~bootstrap/dist/css/bootstrap.css";
 
 /*Product page common styling*/
-.product-top-section {
+
+.product-top-section{
   height: 400px;
   background-color: black;
+  background-image: url('assets/images/product-top-background.jpg');
+  background-size: 100%;
 }
 
 h1{
@@ -15,14 +18,42 @@ h1{
 }
 
 .product-description-title{
-  /*width: 60%;*/
-  /*display: inline-block;*/
-  z-index:10;
-  position: relative;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 .product-descriptions{
   font-size: 1.9vw;
   padding-top: 10px;
   display: inline-block;
+  padding-bottom: 3vh;
 }
+
+.product-image-main {
+  width: 23vw;
+  position:relative;
+  z-index: 1;
+}
+
+/* .product-descriptions > li{
+  padding-bottom: 1.9vh;
+} */
+
+.product-descriptions-right > li{
+  padding-bottom: 1.9vh;
+}
+
+.product-page-features{
+  padding-top: 20vh;
+  font-size:3.5vw;
+  text-align: center;
+}
+
+.product-feature-title{
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 10vh;
+  display: block;
+  clear:both;
+}
+

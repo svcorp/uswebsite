@@ -1,3 +1,7 @@
+.product-top-section{
+  background-image: url('../../../assets/images/distributors.jpg');
+}
+
 .distributors-continent-tab{
  width: 23.8vw;
  padding-top: 5vh;
@@ -28,7 +32,7 @@
 .country-box:second-child {
   vertical-align: middle;
   /*font-size: 2em;*/
-  
+
 }
 
 .active{

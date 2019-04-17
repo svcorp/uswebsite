@@ -2,17 +2,16 @@
     margin-top: 100px;
 }
 
+.about-us-image{
+  width: 117%;
+  height: 400px;
+}
 
 .main-box-1-title{
   color: black;
   font-size: 7vw;
   font-weight: bold;
   padding-top: 100px;
-}
-
-.main-box-1-image{
-  background-color: skyblue;
-  height: 400px;
 }
 
 .main-box-2{

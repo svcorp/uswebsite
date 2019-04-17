@@ -1,0 +1,66 @@
+.product-top-section{
+  background-image: url('../../../assets/images/product-top-background.jpg');
+  background-size: 100%;
+  height: 400px;
+}
+
+.product-page-infrared{
+  margin-top: 10vh;
+}
+
+table, th, td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  font-size: 1.8vw;
+}
+
+th{
+  background-color: lightgray;
+}
+
+th .col-1{
+  font-weight: bold;
+}
+
+.infrared-advantages{
+  margin-top: 20vh;
+  width: 80%;
+}
+
+img{
+  width: 100%;
+  margin-top: 18vh;
+}
+
+.product-image{
+  display: block;
+  width: 60vw;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0;
+}
+
+.product-descriptions {
+  font-size: 1.9vw;
+  margin-left: 3vw;
+  width: 90%;
+}
+
+.product-descriptions-right {
+  font-size: 1.9vw;
+  padding-top: 20vh;
+  padding-left: 7vw;
+  width: 85%;
+  position: relative;
+  display: inline-block;
+}
+
+.product-page-section{
+  margin-top: 20vh;
+}
+
