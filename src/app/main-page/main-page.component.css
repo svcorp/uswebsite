@@ -5,7 +5,6 @@
   background-color: black;
   position:relative;
   z-index: 30;
-  margin-bottom: -60px;
   width: 100%;
 }
 
@@ -28,17 +27,17 @@
 
 /* Main industries styling */
 .main-industries {
-  height: 450px;
   background-color: white;
   z-index: 34;
   position: relative;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
 
 .main-industries-title{
   color:black;
   text-align: center;
   font-size: 3vw;
-  margin-top: 17vh;
 }
 
 .main-industries-content{
@@ -75,10 +74,10 @@
 }
 
 .carousel-img{
-  /* width: 15vw; */
-  width: 50%;
+  height: 25vw;
   position: relative;
-  /* display:block; */
+  background-color:rgb(234, 237, 242);
+  padding: 3.7vw;
   margin-left: auto;
   margin-right: auto;
 }

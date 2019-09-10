@@ -29,9 +29,9 @@
 </div>
 <div class="container-fluid channel-select-botton-box">
   <ul class="nav nav-tabs nav-justified">
-    <li role="presentation" class="active" [ngClass]="{'active' : currentChannel == 'ch1'}"><a (click)="setChannel('ch1')">1 Channel</a></li>
-    <li role="presentation"  class="tabs" [ngClass]="{'active' : currentChannel == 'ch2'}"><a (click)="setChannel('ch2')" >2 Channel</a></li>
-    <li role="presentation" class="tabs" [ngClass]="{'active' : currentChannel == 'ch3'}"><a (click)="setChannel('ch3')" >3 Channel</a></li>
+    <li role="presentation" class="nav-item" ><a class="nav-link  active" [ngClass]="{'active' : currentChannel == 'ch1'}" (click)="setChannel('ch1')">1 Channel</a></li>
+    <li role="presentation"  class="nav-item" ><a class="nav-link" [ngClass]="{'active' : currentChannel == 'ch2'}" (click)="setChannel('ch2')" >2 Channel</a></li>
+    <li role="presentation" class="nav-item" ><a class="nav-link" [ngClass]="{'active' : currentChannel == 'ch3'}" (click)="setChannel('ch3')" >3 Channel</a></li>
   </ul>
 </div>
 <ng-template [ngIf]="currentChannel==='ch1'" >
