@@ -30,7 +30,7 @@
     "firebase-admin": "^7.1.0",
     "firebase-functions": "^2.0.5",
     "jquery": "^3.3.1",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "rxjs": "^5.5.6",
     "tslib": "^1.9.0",
     "zone.js": "^0.8.19"
